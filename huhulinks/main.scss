@@ -12,10 +12,13 @@ body {
 .main {
   justify-content: center;
   height: 100vh;
+  padding-top: 250px;
 }
 
-.block {
-  display: block;
+.element-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
 }
 
 
@@ -66,7 +69,7 @@ button {
   min-width: 125px;
   border: none;
   background: $green;
-  padding: 20px 25px;
+  padding: 12px 14px;
   border-radius: 666px;
   transition: transform ease-out 0.3s;
   &:hover {
