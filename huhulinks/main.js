@@ -15,7 +15,7 @@ function parallax (e) {
     transform: translate(${(xWalk * 0.2) * +1.2}%, ${(yWalk * 0.2) * +1.2}%) scale(1.05);
   `;
   huhuButton.style = `
-    transform: translate(${(xWalk * 0.2) * +1.2}%, ${(yWalk * 0.2) * +1.2}%) scale(0.9);
+    transform: translate(${(xWalk * 0.2) * +1.2}%, ${(yWalk * 0.2) * +1.2}%) scale(.95);
   `;
 }
 
@@ -28,3 +28,6 @@ reset();
 
 huhuButton.addEventListener('mousemove', parallax);
 huhuButton.addEventListener('mouseleave', reset);
+
+
+//cursor https://github.com/lusaxweb/Kursor

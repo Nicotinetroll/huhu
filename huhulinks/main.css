@@ -11,29 +11,13 @@ html {
   height: 100vh;
 }
 
-html {
-  font-family: 'Poppins', sans-serif;
-  background: #101726;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 a {
   overflow: hidden;
   position: relative;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #fff;
-  padding: 12px 46px;
-  border-radius: 500px;
-  border: 2px solid #fff;
 }
 
 a:after {
@@ -45,7 +29,6 @@ a:after {
 
 a:after {
   content: attr(data-replace);
-  padding: 12px 46px;
   height: 100%;
   top: 0;
   transform-origin: 100% 50%;
@@ -67,15 +50,11 @@ a:hover span {
   transform: translate3d(0, 200%, 0);
 }
 
-p {
-  margin: 0;
-}
-
 button {
   cursor: pointer;
   min-width: 125px;
   border: none;
-  background: #fff;
+  background: #2BD97C;
   padding: 20px 25px;
   border-radius: 666px;
   transition: transform ease-out 0.3s;
@@ -83,12 +62,14 @@ button {
 
 button:hover {
   transform: scale(0.98);
+  background: #20b163;
 }
 
 button p {
+  margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: #1b1b1b;
+  color: #101726;
   pointer-events: none;
-  transition: transform ease-out .3s;
+  transition: transform ease-out 0.3s;
 }

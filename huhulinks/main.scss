@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-html {
-  font-family: 'Poppins', sans-serif;
-  background: #101726;
-}
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+$dark-blue: #101726;
+$green: #2BD97C;
 
 html {
   font-family: 'Poppins', sans-serif;
@@ -23,6 +15,7 @@ html {
   align-items: center;
   height: 100vh;
 }
+
 
 a {
   overflow: hidden;
@@ -30,11 +23,7 @@ a {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #fff;
-  padding: 12px 46px;
-  border-radius: 500px;
-  border: 2px solid #fff;
   &:after {
     content: '';
      position: absolute;
@@ -43,13 +32,12 @@ a {
   }
   &:after {
     content: attr(data-replace);
-    padding: 12px 46px;
     height: 100%;
     top: 0;
     transform-origin: 100% 50%;
     transform: translate3d(0, 200%, 0);
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #2BD97C;
+    color: $green;
   }
   &:hover::after {
     transform: translate3d(0, 0, 0);
@@ -68,42 +56,26 @@ a:hover span {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-p { margin: 0 }
-
 button {
   cursor: pointer;
   min-width: 125px;
   border: none;
-  background: #fff;
+  background: $green;
   padding: 20px 25px;
   border-radius: 666px;
   transition: transform ease-out 0.3s;
   &:hover {
     transform: scale(0.98);
+    background: darken($green, 10);
+
   }
   p {
+    margin: 0;
     font-size: 1rem;
     font-weight: 600;
-    color: rgb(27, 27, 27);
+    color: $dark-blue;
     pointer-events: none;
-    transition: transform ease-out .3s;
+    transition: transform ease-out 0.3s;
   }
 }
 
