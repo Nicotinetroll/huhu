@@ -4,16 +4,18 @@
 $dark-blue: #101726;
 $green: #2BD97C;
 
-html {
+body {
   font-family: 'Poppins', sans-serif;
   background: #101726;
 }
 
 .main {
-  display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+}
+
+.block {
+  display: block;
 }
 
 
@@ -24,6 +26,9 @@ a {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+  &:hover{
+    color: #fff;
+  }
   &:after {
     content: '';
      position: absolute;

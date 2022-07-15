@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-html {
+body {
   font-family: 'Poppins', sans-serif;
   background: #101726;
 }
 
 .main {
-  display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+}
+
+.block {
+  display: block;
 }
 
 a {
@@ -17,6 +19,10 @@ a {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
+  color: #fff;
+}
+
+a:hover {
   color: #fff;
 }
 
