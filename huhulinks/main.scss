@@ -71,8 +71,9 @@ p { margin: 0 }
 
 button {
   cursor: pointer;
+  min-width: 125px;
   border: none;
-  background: #fe5f1f;
+  background: #fff;
   padding: 20px 25px;
   border-radius: 666px;
   transition: transform ease-out .2s;
@@ -82,7 +83,7 @@ button {
   p {
     font-size: 1rem;
     font-weight: 600;
-    color: white;
+    color: rgb(27, 27, 27);
     pointer-events: none;
     transition: transform ease-out .2s;
     &:after {
@@ -90,18 +91,6 @@ button {
        position: absolute;
        width: 100%;
        left: 0;
-    }
-    &:after {
-      content: attr(data-replace);
-      height: 100%;
-      top: 0;
-      transform-origin: 100% 50%;
-      transform: translate3d(0, 200%, 0);
-      transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-      color: #2BD97C;
-    }
-    &:hover::after {
-      transform: translate3d(0, 0, 0);
     }
   }
 }

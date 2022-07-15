@@ -1,5 +1,5 @@
-const button = document.querySelector('.button');
-const text = button.querySelector('.button__text');
+const button = document.querySelector('.huhu_btn');
+const text = button.querySelector('.huhu_btn_text');
 
 function parallax (e) {
   const { offsetWidth: width, offsetHeight: height } = button;
@@ -9,12 +9,16 @@ function parallax (e) {
   const yWalk = Math.round((y / height * 100) - 50);
   
   text.style = `
-    transform: translate(${(xWalk * 0.08) * -1}%, ${(yWalk * 0.3) * -1}%) scale(1.1);
+    transform: translate(${(xWalk * 0.2) * +1.2}%, ${(yWalk * 0.2) * +1.2}%) scale(1.05);
+  `;
+  button.style = `
+    transform: translate(${(xWalk * 0.2) * +1.2}%, ${(yWalk * 0.2) * +1.2}%) scale(0.9);
   `;
 }
 
 function reset () {
   text.style = 'transform: translate(0, 0)';
+  button.style = 'transform: translate(0, 0)';
 }
 
 reset();
