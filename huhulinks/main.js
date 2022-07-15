@@ -1,6 +1,10 @@
 
 // Parallax button
 
+// Musim pridat foreach do pice
+// 1. Najdem vsetky elementy, ktore maju classu huhu_btn a huhu_btn_text.
+// 2. Na mouseover zistim, ktory to je a spustim funkciu parallax
+
 const huhuButton = document.querySelector('.huhu_btn');
 const huhuText = huhuButton.querySelector('.huhu_btn_text');
 

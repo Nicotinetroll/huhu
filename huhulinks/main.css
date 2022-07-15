@@ -42,7 +42,7 @@ a:after {
   top: 0;
   transform-origin: 100% 50%;
   transform: translate3d(0, 200%, 0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
   color: #2BD97C;
 }
 
@@ -52,7 +52,7 @@ a:hover::after {
 
 a span {
   display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 a:hover span {
@@ -64,7 +64,7 @@ button {
   min-width: 125px;
   border: none;
   background: #2BD97C;
-  padding: 12px 14px;
+  padding: 12px 26px;
   border-radius: 666px;
   transition: transform ease-out 0.3s;
 }
