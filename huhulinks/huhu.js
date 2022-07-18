@@ -59,8 +59,8 @@ $('.huhu_parallax_icon').mousemove(function(ei) {
     $(this).css('transform', 'translate(' + (xWalk * 0.2) * 2 + '% , ' + (yWalk * 0.2) * 2 + '%) scale(3)')
 
     // TEXT
-    $(this).find('.huhu_paralax_icon_init').css('transform', 'translate(' + (xWalk * 0.85) * 1.2 + '%, ' + (yWalk * 0.85) * 1.2 + '%) scale(1.2)')
-    $(this).css('transform', 'translate(' + (xWalk * 0.15) * 1.2 + '% , ' + (yWalk * 0.2) * 1.2 + '%) scale(1.2)')
+    $(this).find('.huhu_paralax_icon_init').css('transform', 'translate(' + (xWalk * 0.85) * 1.2 + '%, ' + (yWalk * 0.85) * 1.2 + '%) scale(1.4)')
+    $(this).css('transform', 'translate(' + (xWalk * 0.15) * 1.2 + '% , ' + (yWalk * 0.2) * 1.2 + '%) scale(1.4)')
 
 })
 
