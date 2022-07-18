@@ -90,3 +90,7 @@ button p {
   pointer-events: none;
   transition: transform ease-out .4s;
 }
+
+button i {
+  margin-left: 8px;
+}

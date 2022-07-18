@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
 $dark-blue: #101726;
 $green: #2BD97C;
 
@@ -93,6 +92,9 @@ button {
     font-weight: 600;
     pointer-events: none;
     transition: transform ease-out .4s;
+  }
+  i {
+    margin-left: 8px;
   }
 }
 
