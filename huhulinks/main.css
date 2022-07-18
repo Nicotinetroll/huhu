@@ -50,6 +50,10 @@ a:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
+a i {
+  margin-left: 8px;
+}
+
 a span {
   display: inline-block;
   transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
@@ -74,12 +78,16 @@ a:hover span {
   color: #fff;
 }
 
+.huhu_rounded {
+  border-radius: 666px;
+}
+
 button {
   cursor: pointer;
   min-width: 200px;
   border: none;
-  padding: 12px 26px;
-  border-radius: 666px;
+  padding: 12px 32px;
+  border-radius: 2px;
   transition: transform ease-out .2s;
 }
 
