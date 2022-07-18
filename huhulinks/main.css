@@ -59,26 +59,35 @@ a:hover span {
   transform: translate3d(0, 200%, 0);
 }
 
+.huhu_solid_btn {
+  background: #2BD97C;
+  color: #101726;
+}
+
+.huhu_solid_btn:hover {
+  transform: scale(0.98);
+  background: #20b163;
+}
+
+.huhu_outline_btn {
+  background: none;
+  border: 2px solid #2BD97C;
+  color: #fff;
+}
+
 button {
   cursor: pointer;
   min-width: 125px;
   border: none;
-  background: #2BD97C;
   padding: 12px 26px;
   border-radius: 666px;
   transition: transform ease-out 0.3s;
-}
-
-button:hover {
-  transform: scale(0.98);
-  background: #20b163;
 }
 
 button p {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: #101726;
   pointer-events: none;
   transition: transform ease-out 0.3s;
 }

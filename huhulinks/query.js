@@ -1,20 +1,29 @@
-$('.huhu_btn').hover(function(e){
+$('.huhu_parallax').mousemove(function(e) {
+    let { offsetX: x, offsetY: y } = e
 
-    const huhuButton = $(this);
-    const huhuText = $(huhuButton).children('.huhu_btn_text');
+    let width = $(this).width()
+    let height = $(this).height()
 
-    const { offsetWidth: width, offsetHeight: height } = huhuButton;
-    let { offsetX: x, offsetY: y } = e;
+    let xWalk = Math.round((x / width * 100) - 50)
+    let yWalk = Math.round((y / height * 100) - 50)
 
-    const xWalk = Math.round((x / $(this).width() * 100) - 50);
-    const yWalk = Math.round((y / $(this).height() * 100) - 50);
+    // BUTTON
+    $(this).find('.huhu_parallax').css('transform', 'translate(' + (xWalk * 20.) * 1.2 + '%, ' + (yWalk * 0.2) * 1.2 + '%) scale(1.05)')
+    $(this).css('transform', 'translate(' + (xWalk * 0.2) * 1.2 + '% , ' + (yWalk * 0.2) * 1.2 + '%) scale(1.05)')
 
-    
+    // TEXT
+    $(this).find('.huhu_btn_text').css('transform', 'translate(' + (xWalk * 0.15) * 1.2 + '%, ' + (yWalk * 0.15) * 1.2 + '%) scale(1.05)')
+    $(this).css('transform', 'translate(' + (xWalk * 0.15) * 1.2 + '% , ' + (yWalk * 0.2) * 1.2 + '%) scale(1.05)')
 
+})
 
-    // DEBUG
-    console.log( $(e) );
-    
+$('.huhu_parallax').mouseleave(function(e) {
 
+    // BUTTON Reset
+    $(this).find('.huhu_parallax').css('transform', 'translate(0, 0)')
+    $(this).css('transform', 'translate(0, 0)')
 
+    // TEXT Reset
+    $(this).find('.huhu_btn_text').css('transform', 'translate(0, 0)')
+    $(this).css('transform', 'translate(0, 0)')
 })
