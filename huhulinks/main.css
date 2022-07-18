@@ -7,13 +7,32 @@ body {
 .main {
   justify-content: center;
   height: 100vh;
-  padding-top: 250px;
+  padding-top: 120px;
+}
+
+.main h1 {
+  font-size: 69px;
+  margin-bottom: 160px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main h1 strong {
+  color: #2BD97C;
+}
+
+.main .element-info {
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: #fff;
+  opacity: .5;
 }
 
 .element-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 62px;
 }
 
 a {
@@ -66,10 +85,12 @@ a:hover span {
 .huhu_solid_btn {
   background: #2BD97C;
   color: #101726;
+  -webkit-box-shadow: 0px 5px 15px 3px rgba(43, 217, 124, 0.2);
+  box-shadow: 0px 5px 15px 3px rgba(109, 244, 172, 0.2);
 }
 
 .huhu_solid_btn:hover {
-  background: #20b163;
+  background: #56e197;
 }
 
 .huhu_outline_btn {
