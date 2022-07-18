@@ -108,6 +108,32 @@ a:hover span {
   border-radius: 666px;
 }
 
+.huhu_icon {
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border-radius: 50%;
+  transition: transform ease-out .2s;
+  margin-bottom: 500px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.huhu_icon:hover {
+  border-color: #2bd97c;
+  color: #fff;
+}
+
+.huhu_icon p {
+  margin: 0;
+  pointer-events: none;
+  transition: transform ease-out .4s;
+}
+
 button {
   cursor: pointer;
   min-width: 200px;
