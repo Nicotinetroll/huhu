@@ -12,7 +12,7 @@ body {
 
 .main h1 {
   font-size: 69px;
-  margin-bottom: 160px;
+  margin-bottom: 130px;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -97,6 +97,11 @@ a:hover span {
   background: none;
   border: 2px solid #2BD97C;
   color: #fff;
+}
+
+.huhu_outline_btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: #fff;
 }
 
 .huhu_rounded {

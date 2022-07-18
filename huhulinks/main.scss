@@ -14,7 +14,7 @@ body {
   padding-top: 120px;
   h1 {
     font-size: 69px;
-    margin-bottom: 160px;
+    margin-bottom: 130px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -98,6 +98,10 @@ a:hover span {
   background: none;
   border: 2px solid $green;
   color: #fff;
+  &:hover {
+    background: rgba($color: #000000, $alpha: .10);
+    border-color: #fff;
+  }
 }
 
 .huhu_rounded {
