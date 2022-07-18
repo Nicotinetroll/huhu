@@ -27,3 +27,8 @@ $('.huhu_parallax').mouseleave(function(e) {
     $(this).find('.huhu_btn_text').css('transform', 'translate(0, 0)')
     $(this).css('transform', 'translate(0, 0)')
 })
+
+$('.huhu_parallax').click(function() {
+    $(this).animate({opacity: '.8'}, 45);
+    $(this).animate({opacity: '1'}, 45);
+})
