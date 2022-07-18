@@ -1,17 +1,20 @@
-$(function() {
-    const huhuButton2 = document.querySelectorAll('.huhu_btn');
-    const huhuText2 = document.querySelector('.huhu_btn_text');
+$('.huhu_btn').mouseover(function parallax(e){
 
-    $(function huhuParallax(e){
-        const { offsetWidth: width, offsetHeight: height } = huhuButton2;
-        let { offsetX: x, offsetY: y } = e;
+    const huhuButton = $(this);
+    const huhuText = $(huhuButton).children('.huhu_btn_text');
 
-        // Pohyb
-        const xPohyb = Math.round((x / width * 100) - 50);
-        const yPohyb = Math.round((y / height * 100) - 50);
+    const { offsetWidth: width, offsetHeight: height } = huhuButton;
+    let { offsetX: x, offsetY: y } = e;
 
-        // Transformacia
-        huhuText2.style = `transform: translate(${(xPohyb * 0.2) * +1.2}%, ${(yPohyb * 0.2) * +1.2}%) scale(1.05);`;
-        huhuButton2.style = `transform: translate(${(xPohyb * 0.2) * +1.2}%, ${(yPohyb * 0.2) * +1.2}%) scale(.95);`;
-    });
-});
+    const xWalk = Math.round((x / width * 100) - 50);
+    const yWalk = Math.round((y / height * 100) - 50);
+
+
+    // DEBUG
+    console.log( huhuButton );
+    console.log( huhuText );
+    console.log( xWalk );
+    
+
+
+})
