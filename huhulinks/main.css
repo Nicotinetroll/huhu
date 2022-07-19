@@ -19,7 +19,7 @@ body {
 }
 
 .main h1 strong {
-  color: #2BD97C;
+  color: #11f079;
 }
 
 .main .element-info {
@@ -29,13 +29,27 @@ body {
   opacity: .5;
 }
 
+.main p {
+  color: #fff;
+  line-height: 28px;
+}
+
 .element-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 62px;
 }
 
-a {
+.huhu_link_intext {
+  top: 9px;
+  color: #11f079 !important;
+}
+
+.huhu_link_intext:after {
+  color: #fff !important;
+}
+
+.huhu_has_link > a {
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -44,58 +58,65 @@ a {
   color: #fff;
 }
 
-a:hover {
+.huhu_has_link > a:hover {
   color: #fff;
 }
 
-a:after {
+.huhu_has_link > a:after {
   content: '';
   position: absolute;
   width: 100%;
   left: 0;
 }
 
-a:after {
+.huhu_has_link > a:after {
   content: attr(data-replace);
   height: 100%;
   top: 0;
   transform-origin: 100% 50%;
   transform: translate3d(0, 200%, 0);
   transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #2BD97C;
+  color: #11f079;
 }
 
-a:hover::after {
+.huhu_has_link > a:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
-a i {
+.huhu_has_link > a i {
   margin-left: 8px;
 }
 
-a span {
+.huhu_has_link > a span {
   display: inline-block;
   transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-a:hover span {
+.huhu_has_link > a:hover span {
   transform: translate3d(0, 200%, 0);
 }
 
 .huhu_solid_btn {
-  background: #2BD97C;
-  color: #101726;
+  background: #11f079;
+  color: #000000;
   -webkit-box-shadow: 0px 5px 15px 3px rgba(43, 217, 124, 0.2);
   box-shadow: 0px 5px 15px 3px rgba(109, 244, 172, 0.2);
 }
 
+.huhu_solid_btn p {
+  color: #101726;
+}
+
 .huhu_solid_btn:hover {
-  background: #97ecbf;
+  background: #89f8bd;
 }
 
 .huhu_outline_btn {
   background: none;
-  border: 2px solid #2BD97C;
+  border: 2px solid #11f079;
+}
+
+.huhu_outline_btn p {
   color: #fff;
 }
 
@@ -109,6 +130,7 @@ a:hover span {
 }
 
 .huhu_icon {
+  cursor: none;
   margin: 14px;
   display: flex;
   justify-content: center;
@@ -124,7 +146,7 @@ a:hover span {
 }
 
 .huhu_icon:hover {
-  border-color: #2bd97c;
+  border-color: #11f079;
   color: #fff;
 }
 
@@ -153,4 +175,12 @@ button p {
 
 button i {
   margin-left: 8px;
+}
+
+.box {
+  max-width: 500px;
+  padding: 26px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 46px;
 }
